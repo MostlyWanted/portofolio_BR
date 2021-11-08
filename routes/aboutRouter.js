@@ -3,21 +3,19 @@ const {getAbout,getAboutId, updateAbout, delAbout, addAbout } = require('../cont
 const aboutSchema = require('../models/aboutModel');
 
 
-// get about user
+// get about user GET = READ
 router.get('/about', getAbout)
 
-
-
-// add about user
+// add about user  POST = CREATE
 router.post('/about', addAbout)
 
-//get spceific user by id
+//get spceific user by id GET = READ
 router.get('/about/:id', getAboutId)
 
-//update specific user by id
+//update specific user by id PUT = UPDATE OR REPLACE 
 router.put('/about/update/:id', updateAbout)
 
-//delete specific user by id
+//DELETE specific user by id  
 router.delete('/about/:id',delAbout)
 
 module.exports = router;
