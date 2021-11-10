@@ -2,12 +2,13 @@ require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-
+const fileUpload = require('express-fileupload')
 const app = express();
 
 //middleware
 app.use(express.json());
 app.use(cors());
+app.use(fileUpload({useTempFiles:true}))
 
 // connect to MongoDb
 const URI = process.env.MONGO_URL;
@@ -31,10 +32,14 @@ mongoose.connect(URI,
     });
 
 //routes 
+app.use('/contact', require('./routes/contactRouter'));
 app.use('/user', require('./routes/userRouter'));
+app.use('/', require('./routes/projectRouter'));
 app.use('/', require('./routes/aboutRouter'));
 app.use('/', require('./routes/educationRouter'));
 app.use('/', require('./routes/experienceRouter'));
+app.use('/', require('./routes/upload'));
+
 
 
 
