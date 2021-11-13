@@ -1,7 +1,6 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -23,5 +22,17 @@
     "mongoose": "^6.0.12",
     "nodemailer": "^6.7.0",
     "nodemon": "^2.0.14"
-  }
+  },
+  "devDependencies": {
+    "webpack": "^4.44.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MostlyWanted/portofolio_BR.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MostlyWanted/portofolio_BR/issues"
+  },
+  "homepage": "https://github.com/MostlyWanted/portofolio_BR#readme",
+  "description": ""
 }
