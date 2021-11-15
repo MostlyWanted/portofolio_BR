@@ -24,12 +24,17 @@ function App() {
       {/* navbar */}
       <Navbar />
       <Routes>
-      <Route  path="/" element={<About/>} />
-      <Route  path="/" element={<Header/>} />
-      <Route  path="/" element={<Education/>} />
-      <Route  path="/" element={<Projects/>} />
-      <Route  path="/" element={<Experience/>} />
-      <Route  path="/" element={<Contact/>} />
+      <Route  path="/" element={<div><Education/> 
+      <Header/>
+      <About/>
+      <Projects/>
+      <Experience/>
+      <Contact/> </div>}/>
+      {/* <Route  path="/" element=} /> */}
+      {/* <Route  path="/" element={} />
+      <Route  path="/" element={} />
+      <Route  path="/" element={} />
+      <Route  path="/" element={} /> */}
 
 
       <Route  path="/Login" element={<Login/>} />
@@ -38,9 +43,8 @@ function App() {
       <Route  path="/EditProject/:id" element={<EditProjects/>} />
       <Route  path="/EditExperience" element={<EditExperience/>}/>
       <Route  path="/EditAbout" element={<EditAbout/>}/>
-      <Route element={<Footer/>}/>
       </Routes>
-
+      <Footer/>
 
     
     </div>
