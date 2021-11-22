@@ -21,20 +21,14 @@ import {Route, Routes} from 'react-router-dom';
 function App() {
   return (
     <div>
-      {/* navbar */}
       <Navbar />
       <Routes>
-      <Route  path="/" element={<div><Education/> 
+      {/* <Route  path="/" element={<div><Education/> 
       <Header/>
       <About/>
       <Projects/>
       <Experience/>
-      <Contact/> </div>}/>
-      {/* <Route  path="/" element=} /> */}
-      {/* <Route  path="/" element={} />
-      <Route  path="/" element={} />
-      <Route  path="/" element={} />
-      <Route  path="/" element={} /> */}
+      <Contact/> </div>}/> */}
 
 
       <Route  path="/Login" element={<Login/>} />
@@ -44,7 +38,7 @@ function App() {
       <Route  path="/EditExperience" element={<EditExperience/>}/>
       <Route  path="/EditAbout" element={<EditAbout/>}/>
       </Routes>
-      <Footer/>
+      {/* <Footer/> */}
 
     
     </div>
