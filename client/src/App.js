@@ -23,12 +23,13 @@ function App() {
     <div>
       <Navbar />
       <Routes>
-      {/* <Route  path="/" element={<div><Education/> 
+      <Route  path="/" element={<div><Education/> 
       <Header/>
-      <About/>
+      {/* <About/>
       <Projects/>
       <Experience/>
-      <Contact/> </div>}/> */}
+      <Contact/>  */}
+      </div>}/>
 
 
       <Route  path="/Login" element={<Login/>} />
