@@ -29,7 +29,7 @@ const Header = () => {
             },
           },
         //   put fps limit 20
-          fpsLimit: 60,
+          fpsLimit: 20,
           interactivity: {
             detectsOn: "canvas",
             events: {
