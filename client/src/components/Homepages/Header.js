@@ -1,6 +1,6 @@
 import React from 'react';
 
-import profile from '../../images/logo.jpg';
+import profile from '../../images/profpic.jpg';
 // import Particle from 'react-particles-js';
 import Typewriter from 'typewriter-effect';
 import Particles from "react-tsparticles";
@@ -25,11 +25,12 @@ const Header = () => {
         options={{
           background: {
             color: {
-              value: "rgb(17,115,145)",
+              value: "#",
+              
             },
           },
         //   put fps limit 20
-          fpsLimit: 20,
+          fpsLimit: 60,
           interactivity: {
             detectsOn: "canvas",
             events: {
@@ -61,13 +62,13 @@ const Header = () => {
           },
           particles: {
             color: {
-              value: "#ffffff",
+              value: "#000000",
             },
             links: {
-              color: "#ffffff",
+              color: "#000000",
               distance: 150,
               enable: true,
-              opacity: 0.5,
+              opacity: 0.25,
               width: 1,
             },
             collisions: {
@@ -117,7 +118,7 @@ const Header = () => {
                  <h1>
                      <Typewriter
                       options={{
-                          strings:['Odysseas','Kolas'],
+                          strings:['Bijan','Rajaie'],
                           autoStart:true,
                           loop:true
                       }}
@@ -143,27 +144,27 @@ const Header = () => {
                       {/* single info */}
                     <div className="info">
                         <label htmlFor="name">Fullname:</label>
-                        <h4>Odysseas Kolas</h4>
+                        <h4>Bijan Rajaie</h4>
                     </div>
 
                     {/* single info */}
                      <div className="info">
                         <label htmlFor="occupation">occupation:</label>
-                        <h4>Electrician-engineer, seb developer</h4>
+                        <h4>Web Developer</h4>
                     </div>
 
                      {/* single info */}
                     <div className="info">
                         <label htmlFor="email">email:</label>
-                        <h4>odkolas@gmail.com</h4>
+                        <h4>BijanRajaie@gmail.com</h4>
                     </div>
 
                   </div>
 
-                {/* <div className="personalInfo-img">
+                <div className="personalInfo-img">
                     <img src={profile} alt="profile"/>
                   
-                </div> */}
+                </div>
 
 
               </div>
