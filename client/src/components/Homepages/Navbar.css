@@ -80,7 +80,7 @@ nav {
   bottom: 0;
   left: 0;
   right: 0;
-  background: ##005547;
+  background: #005547;
   z-index: 10;
   opacity: 1;
   transition: transform 0.4s ease-in-out;

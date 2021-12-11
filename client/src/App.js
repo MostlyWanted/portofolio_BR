@@ -26,10 +26,10 @@ function App() {
       <Route  path="/" element={<div>
       {/* <Education/>  */}
       {/* <Header/> */}
-      <About/>
-      {/* <Projects/>
-      <Experience/>
-      <Contact/>  */}
+      {/* <About/> */}
+      {/* <Projects/> */}
+      {/* <Experience/> */}
+      {/* <Contact/>  */}
       </div>}/>
 
 
@@ -40,7 +40,7 @@ function App() {
       <Route  path="/EditExperience" element={<EditExperience/>}/>
       <Route  path="/EditAbout" element={<EditAbout/>}/>
       </Routes>
-      {/* <Footer/> */}
+      <Footer/>
 
     
     </div>
