@@ -420,6 +420,20 @@ a {
   .contact-links,
   .contact-media {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 864px) {
+  .contact-media li a {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 864px) {
+  .contact-center {
+    display: flex;
+    justify-content: space-evenly;
   }
 }
 /* End of Footer */

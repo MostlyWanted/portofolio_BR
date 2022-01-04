@@ -24,12 +24,12 @@ function App() {
       <Navbar />
       <Routes>
       <Route  path="/" element={<div>
-      {/* <Education/>  */}
-      {/* <Header/> */}
-      {/* <About/> */}
-      {/* <Projects/> */}
-      {/* <Experience/> */}
-      {/* <Contact/>  */}
+      {/* <Education/>
+      <Header/>
+      <About/>
+      <Projects/>
+      <Experience/>
+      <Contact/>  */}
       </div>}/>
 
 
