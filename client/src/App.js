@@ -35,12 +35,13 @@ function App() {
 
       <Route  path="/Login" element={<Login/>} />
       <Route  path="/Admin" element={<Admin/>} />
+      <Route  path="/edit/:id" element={<EditAbout/>} />
       <Route  path="/EditEducation/:id" element={<EditEducation/>} />
       <Route  path="/EditProject/:id" element={<EditProjects/>} />
       <Route  path="/EditExperience" element={<EditExperience/>}/>
       <Route  path="/EditAbout" element={<EditAbout/>}/>
       </Routes>
-      <Footer/>
+      {/* <Footer/> */}
 
     
     </div>

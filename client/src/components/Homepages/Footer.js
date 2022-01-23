@@ -32,6 +32,8 @@ const Footer = () => {
                                </Link></li>
                            <li className='admin'><Link to='/'>Admin
                                </Link></li>
+                           <li className='login'><Link to='/'>Login
+                               </Link></li>
                        </div>
                    </div>
 
