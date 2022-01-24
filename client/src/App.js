@@ -38,10 +38,10 @@ function App() {
       <Route  path="/edit/:id" element={<EditAbout/>} />
       <Route  path="/EditEducation/:id" element={<EditEducation/>} />
       <Route  path="/EditProject/:id" element={<EditProjects/>} />
-      <Route  path="/EditExperience" element={<EditExperience/>}/>
+      <Route  path="/EditExperience/:id" element={<EditExperience/>}/>
       <Route  path="/EditAbout" element={<EditAbout/>}/>
       </Routes>
-      {/* <Footer/> */}
+      <Footer/>
 
     
     </div>

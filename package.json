@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "server": "^1.0.37",
+    "start": "^5.1.0"
+  }
+}
