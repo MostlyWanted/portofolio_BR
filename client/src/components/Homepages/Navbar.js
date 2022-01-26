@@ -4,12 +4,23 @@ import {Link} from 'react-router-dom';
 import Logo from '../../images/logo.jpg';
 import { useEffect, useState } from "react";
 
+import {scroller} from 'react-scroll';
+
 
 
 
 const Navbar = () => {
 
     const [toggle, setToggle] = useState(false);
+
+    const scrollToElement = (element)=>{
+        scroller.scrollTo(element,{
+            duration:800,
+            delay:50,
+            smooth:true,
+            offset:-80
+        })
+    }
 
     const actToggle=()=>{
         setToggle(!toggle)
@@ -25,7 +36,7 @@ const Navbar = () => {
         <div className="nav-container">
            <nav>
                <div className="logoBtn">
-                <Link to="/"><img src={Logo} alt=""/></Link>
+                <Link to="/" onClick={()=>scrollToElement('Home')}><img src={Logo} alt=""/></Link>
                 <div className="btn" onClick={actToggle}>
                 <div className={toggle ? "bar1 animateBar":"bar bar1"}></div>
                 <div className={toggle ? "bar2 animateBar":"bar bar2"}></div>
@@ -35,12 +46,12 @@ const Navbar = () => {
                </div>
                <div className= "links-container">
                  <ul className={toggle ? "new-links links":"links"} onClick={closeNavbar}>
-                     <li><Link to="/">Home</Link></li>
-                     <li><Link to="/">About</Link></li>
-                     <li><Link to="/">Education</Link></li>
-                     <li><Link to="/">Experience</Link></li>
-                     <li><Link to="/">Projects</Link></li>
-                     <li><Link to="/">Contact</Link></li>
+                     <li onClick={()=>scrollToElement('Home')}><Link to="/">Home</Link></li>
+                     <li onClick={()=>scrollToElement('About')}><Link to="/">About</Link></li>
+                     <li onClick={()=>scrollToElement('Education')}><Link to="/">Education</Link></li>
+                     <li onClick={()=>scrollToElement('Experience')}><Link to="/">Experience</Link></li>
+                     <li onClick={()=>scrollToElement('Projects')}><Link to="/">Projects</Link></li>
+                     <li onClick={()=>scrollToElement('Contact')}><Link to="/">Contact</Link></li>
                      <li className="admin"><Link to="/">Admin</Link></li>
                      <li className="login"><Link to="/login">Login</Link></li>
                  </ul>

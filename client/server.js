@@ -43,7 +43,7 @@ app.use('/', require('./routes/upload'));
 
 
 
-PORT =process.env.PORT || 5000;
+PORT =process.env.PORT || 8080;
 
 app.listen(PORT, ()=>{
     console.log(`server listening on port:${PORT}`);

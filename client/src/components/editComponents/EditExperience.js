@@ -13,7 +13,7 @@ const EditExperience = () => {
                             <label htmlFor="text">Experience</label>
                             <input type="text" />
                             <div className="btns"><button type='submit'>Update Item</button>
-                            <Link to='/admin'></Link></div>
+                            <Link to='/admin'><button className='cancel-btn'>Cancel</button></Link></div>
                         </form>
                     </div>
                 </div>

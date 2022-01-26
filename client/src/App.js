@@ -17,20 +17,24 @@ import EditProjects from './components/editComponents/EditProjects';
 import EditExperience from './components/editComponents/EditExperience';
  
 import {Route, Routes} from 'react-router-dom';
+import {Element} from 'react-scroll';
 
 function App() {
   return (
-    <div>
+    <div className='App'>
       <Navbar />
       <Routes>
+      
+      
       <Route  path="/" element={<div>
-      {/* <Education/>
-      <Header/>
-      <About/>
-      <Projects/>
-      <Experience/>
-      <Contact/>  */}
+      <Element className='Header'><Header/></Element>
+      <Element className='About'><About/></Element>
+      <Element className='Education'><Education/></Element>
+      <Element className='Projects'><Projects/></Element>
+      <Element className='Experience'><Experience/></Element>
+      <Element className='Contact'><Contact/></Element>
       </div>}/>
+
 
 
       <Route  path="/Login" element={<Login/>} />

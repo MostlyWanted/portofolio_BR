@@ -3,6 +3,20 @@ import {Link} from 'react-router-dom';
 import {scroller} from 'react-scroll';
 
 const Footer = () => {
+
+
+
+    const scrollToElement = (element)=>{
+        scroller.scrollTo(element,{
+            duration:800,
+            delay:50,
+            smooth:true,
+            offset:-80
+        })
+    }
+
+
+
     return (
         <React.Fragment>
             <div className="main-title">
@@ -18,17 +32,17 @@ const Footer = () => {
                    <div className="contact-center-links">
                        <h3>Links</h3>
                        <div className="contact-links">
-                           <li><Link to='/'>Home
+                           <li nClick={()=>scrollToElement('Home')}><Link to='/'>Home
                                </Link></li>
-                           <li><Link to='/'>About
+                           <li nClick={()=>scrollToElement('About')}><Link to='/'>About
                                </Link></li>
-                           <li><Link to='/'>Education
+                           <li nClick={()=>scrollToElement('Education')}><Link to='/'>Education
                                </Link></li>
-                           <li><Link to='/'>Experience
+                           <li nClick={()=>scrollToElement('Experience')}><Link to='/'>Experience
                                </Link></li>
-                           <li><Link to='/'>Projects
+                           <li nClick={()=>scrollToElement('Projects')}><Link to='/'>Projects
                                </Link></li>
-                           <li><Link to='/'>Contact
+                           <li nClick={()=>scrollToElement('Contact')}><Link to='/'>Contact
                                </Link></li>
                            <li className='admin'><Link to='/'>Admin
                                </Link></li>
